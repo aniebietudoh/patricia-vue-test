@@ -10,7 +10,7 @@
             <div class="column has-text-left">
               <img src="../assets/patricia-logo.png" alt="Patricia Logo" srcset="">
             </div>
-            <div class="column has-text-right">
+            <div class="column has-text-right is-highted">
               <img v-if="!isMasked" v-on:click="maskCardNo" src="../assets/unmask-eye.png" alt="Show card no " srcset="">
               <img v-if="isMasked" v-on:click="loadCardNo" src="../assets/mask-eye.png" alt="Hide card no" srcset="">
             </div>
@@ -91,6 +91,7 @@ export default {
   background-image: url('../assets/patricia-bg.png');
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+
 .is-color-smoke {
   color: #D3DCE6;
 }
@@ -117,6 +118,9 @@ sub {
 .is-date-text {
   display: inline-block;
   padding-top: -10px;
+}
+.is-highted {
+  height: 10px;
 }
 
 @media only screen and (max-width: 768px) {
