@@ -2,7 +2,7 @@
   <div class="container">
     <div class="columns has-text-centered is-mobile">
       <div class="column is-3 is-hidden-mobile"></div>
-      <div class="column m-5">
+      <div class="column m-4">
         <div class="card-item">
 
           <!-- Brand name & Eye toggle Area -->
@@ -16,7 +16,7 @@
             </div>
           </div>
           <!-- Card Number Area -->
-          <div class="columns p-5 is-mobile pt-6 pb-6">
+          <div class="columns p-5 is-mobile pt-6 pb-6 ard">
             <div class="column has-text-left is-color-smoke">
              <span class="card-number mr-6"> {{cardNo.first}} </span>
              <span class="card-number mr-6 ml-4"> {{cardNo. second}} </span>
@@ -79,6 +79,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.columns {
+  transition: height 2s linear;
+}
 .card-item {
   border-radius: 15px;
   border: 1px solid #131313;
@@ -86,6 +89,7 @@ export default {
   background-repeat: no-repeat;
   background-size: contain;
   background-image: url('../assets/patricia-bg.png');
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .is-color-smoke {
   color: #D3DCE6;
@@ -93,6 +97,7 @@ export default {
 .card-number {
   font-size: 1.6vw;
   letter-spacing: 2px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .has-text-left {
   font-size: 1rem;
