@@ -8,11 +8,11 @@
           <!-- Brand name & Eye toggle Area -->
           <div class="columns p-5 is-mobile">
             <div class="column has-text-left">
-              <img src="../assets/patricia-logo.png" alt="" srcset="">
+              <img src="../assets/patricia-logo.png" alt="Patricia Logo" srcset="">
             </div>
             <div class="column has-text-right">
-              <img v-if="!isMasked" v-on:click="maskCardNo" src="../assets/unmask-eye.png" alt="" srcset="">
-              <img v-if="isMasked" v-on:click="loadCardNo" src="../assets/mask-eye.png" alt="" srcset="">
+              <img v-if="!isMasked" v-on:click="maskCardNo" src="../assets/unmask-eye.png" alt="Show card no " srcset="">
+              <img v-if="isMasked" v-on:click="loadCardNo" src="../assets/mask-eye.png" alt="Hide card no" srcset="">
             </div>
           </div>
           <!-- Card Number Area -->
